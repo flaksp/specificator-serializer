@@ -1,5 +1,6 @@
 # Specificator serializer
 
+[![Coverage Status](https://coveralls.io/repos/github/neluzhin/specificator-serializer/badge.svg?branch=master)](https://coveralls.io/github/neluzhin/specificator-serializer?branch=master)
 [![NPM downloads](https://img.shields.io/npm/dm/specificator-serializer.svg)](https://www.npmjs.com/package/specificator-serializer)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg?maxAge=604800)](https://renovatebot.com/)
 
