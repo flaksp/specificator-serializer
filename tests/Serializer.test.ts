@@ -1,7 +1,7 @@
 import {RequestBody} from "specificator";
 import {Serializer} from "../src/Serializer";
 
-test("Serializer should be able to sort object keys alphabetically", () => {
+test("Serializer should sort objects if sortObjectKeysAlphabetically option is true", () => {
     const object = new RequestBody({
         required: true,
         description: "Test description",
@@ -17,6 +17,27 @@ test("Serializer should be able to sort object keys alphabetically", () => {
         content: {},
         description: "Test description",
         required: true,
+    });
+
+    expect(expectedJson).toEqual(actualJson);
+});
+
+test("Serializer should not sort objects if sortObjectKeysAlphabetically option is false", () => {
+    const object = new RequestBody({
+        required: true,
+        description: "Test description",
+        content: {},
+    });
+
+    const serializer = new Serializer({
+        sortObjectKeysAlphabetically: false
+    });
+
+    const expectedJson = JSON.stringify(serializer.serialize(object));
+    const actualJson = JSON.stringify({
+        required: true,
+        description: "Test description",
+        content: {},
     });
 
     expect(expectedJson).toEqual(actualJson);
