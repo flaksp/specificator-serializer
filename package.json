@@ -29,6 +29,7 @@
     },
     "keywords": [
         "openapi",
+        "specificator",
         "specificator-serializer"
     ],
     "license": "MIT",

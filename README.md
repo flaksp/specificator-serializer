@@ -73,4 +73,4 @@ Possible configuration parameters are listed below.
 
 There may be a case when this serializer will not cover all your cases. If you want to create your own serializer, it should implement [`SerializerInterface`](https://github.com/neluzhin/specificator/blob/master/src/Serializer/SerializerInterface.ts) to make it feel consistent between all existing implementations.
 
-Also it's recommended to add [`specificator-serializer`](https://www.npmjs.com/search?q=keywords:specificator-serializer) keyword to your package.json file and [`specificator-serializer`](https://github.com/topics/specificator-serializer) topic to your GitHub repository for better discoverability.
+Also it's recommended to add [`specificator`](https://www.npmjs.com/search?q=keywords:specificator) & [`specificator-serializer`](https://www.npmjs.com/search?q=keywords:specificator-serializer) keywords to your package.json file and [`specificator`](https://github.com/topics/specificator) & [`specificator-serializer`](https://github.com/topics/specificator-serializer) topics to your GitHub repository for better discoverability.
