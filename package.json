@@ -1,0 +1,42 @@
+{
+    "name": "specificator-serializer",
+    "description": "Default serializer for Specificator.",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "sideEffects": false,
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "24.0.11",
+        "coveralls": "3.0.3",
+        "jest": "24.7.1",
+        "markdownlint-cli": "0.15.0",
+        "npm-publish-git-tag": "3.0.4",
+        "ts-jest": "24.0.2",
+        "tslint": "5.15.0",
+        "typescript": "3.4.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/neluzhin/specificator-serializer.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "author": {
+        "name": "Petr Flaks",
+        "email": "petr@flaks.dev",
+        "url": "https://github.com/neluzhin"
+    },
+    "keywords": [
+        "openapi",
+        "specificator-serializer"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/neluzhin/specificator-serializer/issues"
+    },
+    "homepage": "https://github.com/neluzhin/specificator-serializer",
+    "optionalDependencies": {
+        "specificator": "^0.4.0"
+    }
+}
