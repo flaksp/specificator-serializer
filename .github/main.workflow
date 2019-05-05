@@ -8,29 +8,57 @@ workflow "Publish new release" {
   resolves = ["deploy/npm"]
 }
 
+action "dependencies/npm" {
+  uses = "docker://node:8.16.0-alpine"
+  runs = "npm"
+  args = ["install"]
+}
+
 action "lint/markdownlint" {
-  uses = "./.github"
-  runs = "/markdownlint.sh"
+  needs = [
+    "dependencies/npm"
+  ]
+  uses = "docker://node:8.16.0-alpine"
+  args = ["node_modules/.bin/markdownlint", "*.md", "docs/*.md"]
 }
 
 action "lint/tslint" {
-  uses = "./.github"
-  runs = "/tslint.sh"
+  needs = [
+    "dependencies/npm"
+  ]
+  uses = "docker://node:8.16.0-alpine"
+  args = ["node_modules/.bin/tslint", "--project", "."]
 }
 
 action "test/jest" {
-  uses = "./.github"
-  runs = "/jest.sh"
+  needs = [
+    "dependencies/npm"
+  ]
+  uses = "docker://node:8.16.0-alpine"
+  runs = ["sh", "-c", "node_modules/.bin/jest --coverage --coverageReporters=text-lcov | node_modules/.bin/coveralls"]
   env = {
     COVERALLS_SERVICE_NAME = "github-actions"
   }
   secrets = ["COVERALLS_REPO_TOKEN"]
 }
 
+action "app/build" {
+  needs = [
+    "dependencies/npm"
+  ]
+  uses = "docker://node:8.16.0-alpine"
+  args = ["node_modules/.bin/tsc"]
+}
+
 action "deploy/npm" {
-  needs = ["test/jest"]
-  uses = "./.github"
-  runs = "/publish-to-npm.sh"
+  needs = [
+    "dependencies/npm",
+    "test/jest",
+    "app/build"
+  ]
+  uses = "docker://node:8.16.0-alpine"
+  args = ["node_modules/.bin/npm-publish-git-tag"]
   secrets = ["NPM_TOKEN"]
 }
+
 
