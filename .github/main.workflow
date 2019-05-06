@@ -53,11 +53,10 @@ action "app/build" {
 action "deploy/npm" {
   needs = [
     "dependencies/npm",
-    "test/jest",
     "app/build"
   ]
   uses = "docker://node:8.16.0-alpine"
-  args = ["node_modules/.bin/npm-publish-git-tag"]
+  runs = ["sh", "-c", "apk add --upgrade git && node_modules/.bin/npm-publish-git-tag"]
   secrets = ["NPM_TOKEN"]
 }
 
