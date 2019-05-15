@@ -38,6 +38,6 @@
     },
     "homepage": "https://github.com/neluzhin/specificator-serializer",
     "optionalDependencies": {
-        "specificator": "^0.7.0"
+        "specificator": "^0.8.0"
     }
 }
