@@ -31,7 +31,7 @@ export class Serializer implements SerializerInterface {
             .reduce((acc: object, key: string) => {
                 return {
                     ...acc,
-                    [key]: typeof unsortedObject[key] === "object"
+                    [key]: typeof unsortedObject[key] === "object" && Array.isArray(unsortedObject[key]) === false
                         ? Serializer.sortObjectKeysAlphabetically(unsortedObject[key])
                         : unsortedObject[key],
                 };
