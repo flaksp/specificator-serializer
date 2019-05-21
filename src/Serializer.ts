@@ -28,9 +28,14 @@ export class Serializer implements SerializerInterface {
     private static sortObjectKeysAlphabetically(unsortedObject: {[key: string]: any}): object {
         return Object.keys(unsortedObject)
             .sort()
-            .reduce((acc: object, key: string) => ({
-                ...acc, [key]: unsortedObject[key],
-            }), {});
+            .reduce((acc: object, key: string) => {
+                return {
+                    ...acc,
+                    [key]: typeof unsortedObject[key] === "object"
+                        ? Serializer.sortObjectKeysAlphabetically(unsortedObject[key])
+                        : unsortedObject[key],
+                };
+            }, {});
     }
 
     public serialize(openApiObject: SerializableInterface): object {
