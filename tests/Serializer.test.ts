@@ -1,11 +1,13 @@
-import {RequestBody} from "specificator";
+import {RequestBody, StringSchema} from "specificator";
 import {Serializer} from "../src/Serializer";
 
 test("Serializer should sort objects if sortObjectKeysAlphabetically option is true", () => {
-    const object = new RequestBody({
-        required: true,
+    const object = new StringSchema({
+        enum: [
+            "Dog",
+            "Cat"
+        ],
         description: "Test description",
-        content: {},
     });
 
     const serializer = new Serializer({
@@ -14,9 +16,12 @@ test("Serializer should sort objects if sortObjectKeysAlphabetically option is t
 
     const expectedJson = JSON.stringify(serializer.serialize(object));
     const actualJson = JSON.stringify({
-        content: {},
         description: "Test description",
-        required: true,
+        enum: [
+            "Dog",
+            "Cat"
+        ],
+        type: "string",
     });
 
     expect(expectedJson).toEqual(actualJson);
@@ -35,9 +40,9 @@ test("Serializer should not sort objects if sortObjectKeysAlphabetically option 
 
     const expectedJson = JSON.stringify(serializer.serialize(object));
     const actualJson = JSON.stringify({
-        required: true,
-        description: "Test description",
         content: {},
+        description: "Test description",
+        required: true,
     });
 
     expect(expectedJson).toEqual(actualJson);
