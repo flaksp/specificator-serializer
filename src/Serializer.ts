@@ -36,14 +36,14 @@ export class Serializer implements SerializerInterface {
     public serialize(openApiObject: SerializableInterface): object {
         let serializedObject = openApiObject.serialize();
 
-        if (this.sortObjectKeysAlphabetically) {
-            serializedObject = Serializer.sortObjectKeysAlphabetically(serializedObject);
-        }
-
         for (const serializedObjectKey in serializedObject) {
             if (Serializer.isSerializable(serializedObject[serializedObjectKey])) {
                 serializedObject[serializedObjectKey] = this.serialize(serializedObject[serializedObjectKey]);
             }
+        }
+
+        if (this.sortObjectKeysAlphabetically) {
+            serializedObject = Serializer.sortObjectKeysAlphabetically(serializedObject);
         }
 
         return serializedObject;
