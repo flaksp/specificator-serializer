@@ -1,0 +1,29 @@
+name: Quality assurance
+
+on: push
+
+jobs:
+  npm:
+    name: npm
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
+
+      - name: Install npm dependencies
+        uses: actions/npm@master
+        with:
+          args: install
+
+      - name: Lint with markdownlint
+        run: node_modules/.bin/markdownlint *.md
+
+      - name: Lint with tslint
+        run: node_modules/.bin/tslint --project .
+
+      - name: Test with Jest
+        run: node_modules/.bin/jest --coverage --coverageReporters=text-lcov | node_modules/.bin/coveralls
+        env:
+          COVERALLS_SERVICE_NAME: github-actions
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}

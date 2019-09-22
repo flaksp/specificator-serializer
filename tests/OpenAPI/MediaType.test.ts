@@ -1,5 +1,5 @@
-import {MediaType} from "specificator";
-import {StringSchema} from "specificator";
+import {MediaType} from "@neluzhin/specificator";
+import {StringSchema} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("MediaType should be serializable", () => {

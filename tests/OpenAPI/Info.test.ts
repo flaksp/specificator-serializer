@@ -1,6 +1,6 @@
-import {Contact} from "specificator";
-import {Info} from "specificator";
-import {License} from "specificator";
+import {Contact} from "@neluzhin/specificator";
+import {Info} from "@neluzhin/specificator";
+import {License} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Info should be serializable", () => {

@@ -1,4 +1,4 @@
-import {ServerVariable} from "specificator";
+import {ServerVariable} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("ServerVariable should be serializable", () => {

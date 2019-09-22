@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "specificator";
-import {IntegerSchema} from "specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
+import {IntegerSchema} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("IntegerSchema should be serializable", () => {

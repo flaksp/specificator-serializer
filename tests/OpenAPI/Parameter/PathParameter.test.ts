@@ -1,5 +1,5 @@
-import {PathParameter} from "specificator";
-import {Reference} from "specificator";
+import {PathParameter} from "@neluzhin/specificator";
+import {Reference} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("PathParameter should be serializable", () => {

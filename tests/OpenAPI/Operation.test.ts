@@ -1,6 +1,6 @@
-import {ExternalDocumentation} from "specificator";
-import {Operation} from "specificator";
-import {Reference} from "specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
+import {Operation} from "@neluzhin/specificator";
+import {Reference} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Operation should be serializable", () => {

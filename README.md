@@ -1,8 +1,6 @@
 # Specificator serializer
 
 [![Coverage Status](https://coveralls.io/repos/github/neluzhin/specificator-serializer/badge.svg?branch=master)](https://coveralls.io/github/neluzhin/specificator-serializer?branch=master)
-[![NPM downloads](https://img.shields.io/npm/dm/specificator-serializer.svg)](https://www.npmjs.com/package/specificator-serializer)
-[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg?maxAge=604800)](https://renovatebot.com/)
 
 > **Achtung!** This library is in early development state so it's unstable. It works now, but there are no guarantees for API stability (it may change during development). We are testing this library inside our projects and adopting some features to make it feel better. Please wait for version 1.0 and don't use it inside real projects.
 
@@ -12,9 +10,13 @@ This library is default serializer for [Specificator](https://github.com/neluzhi
 
 ### Installation
 
+Install from [npm Registry](https://www.npmjs.com/package/@neluzhin/specificator-serializer):
+
 ```console
-npm install --save-dev specificator-serializer
+npm install --save-dev @neluzhin/specificator-serializer
 ```
+
+The package is also available in [GitHub Package Registry](https://github.com/neluzhin/specificator-serializer/packages).
 
 ### Usage
 
@@ -68,9 +70,3 @@ Possible configuration parameters are listed below.
 #### `sortObjectKeysAlphabetically`
 
 **Boolean.** Sort all object keys alphabetically. Defaults to `false`.
-
-## Creating your own serializer
-
-There may be a case when this serializer will not cover all your cases. If you want to create your own serializer, it should implement [`SerializerInterface`](https://github.com/neluzhin/specificator/blob/master/src/Serializer/SerializerInterface.ts) to make it feel consistent between all existing implementations.
-
-Also it's recommended to add [`specificator`](https://www.npmjs.com/search?q=keywords:specificator) & [`specificator-serializer`](https://www.npmjs.com/search?q=keywords:specificator-serializer) keywords to your package.json file and [`specificator`](https://github.com/topics/specificator) & [`specificator-serializer`](https://github.com/topics/specificator-serializer) topics to your GitHub repository for better discoverability.

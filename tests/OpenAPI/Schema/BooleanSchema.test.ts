@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "specificator";
-import {BooleanSchema} from "specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
+import {BooleanSchema} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("BooleanSchema should be serializable", () => {

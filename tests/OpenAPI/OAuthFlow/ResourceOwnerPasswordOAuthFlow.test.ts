@@ -1,4 +1,4 @@
-import {ResourceOwnerPasswordOAuthFlow} from "specificator";
+import {ResourceOwnerPasswordOAuthFlow} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ResourceOwnerPasswordOAuthFlow should be serializable", () => {

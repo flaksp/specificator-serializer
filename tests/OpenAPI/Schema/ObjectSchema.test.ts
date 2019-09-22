@@ -1,6 +1,6 @@
-import {Discriminator} from "specificator";
-import {ExternalDocumentation} from "specificator";
-import {ObjectSchema} from "specificator";
+import {Discriminator} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
+import {ObjectSchema} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ObjectSchema should be serializable", () => {

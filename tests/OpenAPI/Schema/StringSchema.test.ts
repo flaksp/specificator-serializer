@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "specificator";
-import {StringSchema} from "specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
+import {StringSchema} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("StringSchema should be serializable", () => {

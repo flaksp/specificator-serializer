@@ -1,5 +1,5 @@
-import {CookieParameter} from "specificator";
-import {Reference} from "specificator";
+import {CookieParameter} from "@neluzhin/specificator";
+import {Reference} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("CookieParameter should be serializable", () => {

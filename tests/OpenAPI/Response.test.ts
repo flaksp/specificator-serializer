@@ -1,4 +1,4 @@
-import {Response} from "specificator";
+import {Response} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Response should be serializable", () => {

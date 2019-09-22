@@ -1,23 +1,23 @@
 {
-    "name": "specificator-serializer",
+    "name": "@neluzhin/specificator-serializer",
     "description": "Default serializer for Specificator.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "sideEffects": false,
     "dependencies": {},
     "devDependencies": {
+        "@hutson/npm-deploy-git-tag": "^5.0.2",
         "@types/jest": "24.0.18",
         "coveralls": "3.0.6",
         "jest": "24.9.0",
         "markdownlint-cli": "0.18.0",
-        "npm-publish-git-tag": "3.0.4",
         "ts-jest": "24.1.0",
         "tslint": "5.20.0",
         "typescript": "3.6.3"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/neluzhin/specificator-serializer.git"
+        "url": "git://github.com/neluzhin/specificator-serializer.git"
     },
     "files": [
         "dist"
@@ -38,6 +38,6 @@
     },
     "homepage": "https://github.com/neluzhin/specificator-serializer",
     "optionalDependencies": {
-        "specificator": "^0.9.1"
+        "@neluzhin/specificator": "^0.10.0"
     }
 }

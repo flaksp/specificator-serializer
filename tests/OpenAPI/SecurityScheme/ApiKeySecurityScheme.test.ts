@@ -1,4 +1,4 @@
-import {ApiKeySecurityScheme} from "specificator";
+import {ApiKeySecurityScheme} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ApiKeySecurityScheme should be serializable", () => {

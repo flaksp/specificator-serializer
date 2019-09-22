@@ -1,4 +1,4 @@
-import {HttpSecurityScheme} from "specificator";
+import {HttpSecurityScheme} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("HttpSecurityScheme should be serializable", () => {

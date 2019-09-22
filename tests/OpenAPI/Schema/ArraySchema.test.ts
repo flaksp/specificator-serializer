@@ -1,6 +1,6 @@
-import {ExternalDocumentation} from "specificator";
-import {Reference} from "specificator";
-import {ArraySchema} from "specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
+import {Reference} from "@neluzhin/specificator";
+import {ArraySchema} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ArraySchema should be serializable", () => {

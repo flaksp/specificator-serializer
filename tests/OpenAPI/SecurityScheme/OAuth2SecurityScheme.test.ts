@@ -1,9 +1,9 @@
-import {AuthorizationCodeOAuthFlow} from "specificator";
-import {ClientCredentialsOAuthFlow} from "specificator";
-import {ImplicitOAuthFlow} from "specificator";
-import {ResourceOwnerPasswordOAuthFlow} from "specificator";
-import {OAuthFlows} from "specificator";
-import {OAuth2SecurityScheme} from "specificator";
+import {AuthorizationCodeOAuthFlow} from "@neluzhin/specificator";
+import {ClientCredentialsOAuthFlow} from "@neluzhin/specificator";
+import {ImplicitOAuthFlow} from "@neluzhin/specificator";
+import {ResourceOwnerPasswordOAuthFlow} from "@neluzhin/specificator";
+import {OAuthFlows} from "@neluzhin/specificator";
+import {OAuth2SecurityScheme} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("OAuth2SecurityScheme should be serializable", () => {

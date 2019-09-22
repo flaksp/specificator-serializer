@@ -1,4 +1,4 @@
-import {Reference} from "specificator";
+import {Reference} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Reference should be serializable", () => {

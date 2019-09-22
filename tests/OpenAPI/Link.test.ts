@@ -1,5 +1,5 @@
-import {Link} from "specificator";
-import {Server} from "specificator";
+import {Link} from "@neluzhin/specificator";
+import {Server} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Link should be serializable", () => {

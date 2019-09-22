@@ -1,4 +1,4 @@
-import {ExternalDocumentation} from "specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("ExternalDocumentation should be serializable", () => {

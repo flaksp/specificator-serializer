@@ -1,4 +1,4 @@
-import {AuthorizationCodeOAuthFlow} from "specificator";
+import {AuthorizationCodeOAuthFlow} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("AuthorizationCodeOAuthFlow should be serializable", () => {

@@ -1,5 +1,5 @@
-import {Header} from "specificator";
-import {StringSchema} from "specificator";
+import {Header} from "@neluzhin/specificator";
+import {StringSchema} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Header should be serializable", () => {

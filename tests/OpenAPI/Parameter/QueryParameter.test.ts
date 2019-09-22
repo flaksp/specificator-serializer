@@ -1,5 +1,5 @@
-import {QueryParameter} from "specificator";
-import {Reference} from "specificator";
+import {QueryParameter} from "@neluzhin/specificator";
+import {Reference} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("QueryParameter should be serializable", () => {

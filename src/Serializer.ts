@@ -1,4 +1,4 @@
-import {SerializableInterface, SerializerInterface} from "specificator";
+import {SerializableInterface, SerializerInterface} from "@neluzhin/specificator";
 
 interface SerializerConfigurationInterface {
     /**

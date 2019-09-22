@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "specificator";
-import {Tag} from "specificator";
+import {ExternalDocumentation} from "@neluzhin/specificator";
+import {Tag} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Tag should be serializable", () => {

@@ -1,4 +1,4 @@
-import {Contact} from "specificator";
+import {Contact} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Contact should be serializable", () => {

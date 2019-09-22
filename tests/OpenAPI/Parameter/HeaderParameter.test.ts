@@ -1,5 +1,5 @@
-import {HeaderParameter} from "specificator";
-import {Reference} from "specificator";
+import {HeaderParameter} from "@neluzhin/specificator";
+import {Reference} from "@neluzhin/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("HeaderParameter should be serializable", () => {

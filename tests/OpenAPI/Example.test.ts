@@ -1,4 +1,4 @@
-import {Example} from "specificator";
+import {Example} from "@neluzhin/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Example should be serializable", () => {
