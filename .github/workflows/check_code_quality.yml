@@ -27,3 +27,6 @@ jobs:
         env:
           COVERALLS_SERVICE_NAME: github-actions
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+
+      - name: Build library
+        run: node_modules/.bin/tsc
