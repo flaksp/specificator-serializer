@@ -10,7 +10,7 @@
         "@types/jest": "24.0.23",
         "coveralls": "3.0.9",
         "jest": "24.9.0",
-        "markdownlint-cli": "0.19.0",
+        "markdownlint-cli": "0.20.0",
         "ts-jest": "24.2.0",
         "tslint": "5.20.1",
         "typescript": "3.7.2"
