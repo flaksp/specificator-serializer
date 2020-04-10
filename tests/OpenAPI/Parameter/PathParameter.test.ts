@@ -1,5 +1,5 @@
-import {PathParameter} from "@neluzhin/specificator";
-import {Reference} from "@neluzhin/specificator";
+import {PathParameter} from "@flaksp/specificator";
+import {Reference} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("PathParameter should be serializable", () => {

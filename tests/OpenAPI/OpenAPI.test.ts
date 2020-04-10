@@ -1,9 +1,9 @@
-import {Components} from "@neluzhin/specificator";
-import {Contact} from "@neluzhin/specificator";
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {Info} from "@neluzhin/specificator";
-import {License} from "@neluzhin/specificator";
-import {OpenAPI} from "@neluzhin/specificator";
+import {Components} from "@flaksp/specificator";
+import {Contact} from "@flaksp/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {Info} from "@flaksp/specificator";
+import {License} from "@flaksp/specificator";
+import {OpenAPI} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("OpenAPI should be serializable", () => {

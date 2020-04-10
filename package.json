@@ -1,5 +1,5 @@
 {
-    "name": "@neluzhin/specificator-serializer",
+    "name": "@flaksp/specificator-serializer",
     "description": "Default serializer for Specificator.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/neluzhin/specificator-serializer.git"
+        "url": "git://github.com/flaksp/specificator-serializer.git"
     },
     "files": [
         "dist"
@@ -25,7 +25,7 @@
     "author": {
         "name": "Petr Flaks",
         "email": "petr@flaks.dev",
-        "url": "https://github.com/neluzhin"
+        "url": "https://github.com/flaksp"
     },
     "keywords": [
         "openapi",
@@ -34,10 +34,10 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/neluzhin/specificator-serializer/issues"
+        "url": "https://github.com/flaksp/specificator-serializer/issues"
     },
-    "homepage": "https://github.com/neluzhin/specificator-serializer",
+    "homepage": "https://github.com/flaksp/specificator-serializer",
     "optionalDependencies": {
-        "@neluzhin/specificator": "^0.10.1"
+        "@flaksp/specificator": "0.11.0"
     }
 }

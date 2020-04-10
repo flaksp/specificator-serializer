@@ -1,4 +1,4 @@
-import {Response} from "@neluzhin/specificator";
+import {Response} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Response should be serializable", () => {

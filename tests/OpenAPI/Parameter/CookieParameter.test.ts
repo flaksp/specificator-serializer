@@ -1,5 +1,5 @@
-import {CookieParameter} from "@neluzhin/specificator";
-import {Reference} from "@neluzhin/specificator";
+import {CookieParameter} from "@flaksp/specificator";
+import {Reference} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("CookieParameter should be serializable", () => {

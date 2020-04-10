@@ -1,4 +1,4 @@
-import {Components} from "@neluzhin/specificator";
+import {Components} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Components should be serializable", () => {

@@ -1,6 +1,6 @@
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {Reference} from "@neluzhin/specificator";
-import {ArraySchema} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {Reference} from "@flaksp/specificator";
+import {ArraySchema} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ArraySchema should be serializable", () => {

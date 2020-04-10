@@ -1,4 +1,4 @@
-import {SerializableInterface, SerializerInterface} from "@neluzhin/specificator";
+import {SerializableInterface, SerializerInterface} from "@flaksp/specificator";
 
 interface SerializerConfigurationInterface {
     /**

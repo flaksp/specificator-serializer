@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {NumberSchema} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {NumberSchema} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("NumberSchema should be serializable", () => {

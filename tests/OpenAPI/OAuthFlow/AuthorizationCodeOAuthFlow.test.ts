@@ -1,4 +1,4 @@
-import {AuthorizationCodeOAuthFlow} from "@neluzhin/specificator";
+import {AuthorizationCodeOAuthFlow} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("AuthorizationCodeOAuthFlow should be serializable", () => {

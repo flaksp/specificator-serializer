@@ -1,4 +1,4 @@
-import {Server} from "@neluzhin/specificator";
+import {Server} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Server should be serializable", () => {

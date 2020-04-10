@@ -1,5 +1,5 @@
-import {MediaType} from "@neluzhin/specificator";
-import {StringSchema} from "@neluzhin/specificator";
+import {MediaType} from "@flaksp/specificator";
+import {StringSchema} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("MediaType should be serializable", () => {

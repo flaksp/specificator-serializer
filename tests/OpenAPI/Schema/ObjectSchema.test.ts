@@ -1,6 +1,6 @@
-import {Discriminator} from "@neluzhin/specificator";
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {ObjectSchema} from "@neluzhin/specificator";
+import {Discriminator} from "@flaksp/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {ObjectSchema} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ObjectSchema should be serializable", () => {

@@ -1,5 +1,5 @@
-import {HeaderParameter} from "@neluzhin/specificator";
-import {Reference} from "@neluzhin/specificator";
+import {HeaderParameter} from "@flaksp/specificator";
+import {Reference} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("HeaderParameter should be serializable", () => {

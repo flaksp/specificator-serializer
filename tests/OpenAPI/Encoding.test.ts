@@ -1,4 +1,4 @@
-import {Encoding} from "@neluzhin/specificator";
+import {Encoding} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Encoding should be serializable", () => {

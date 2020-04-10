@@ -1,4 +1,4 @@
-import {ApiKeySecurityScheme} from "@neluzhin/specificator";
+import {ApiKeySecurityScheme} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ApiKeySecurityScheme should be serializable", () => {

@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {IntegerSchema} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {IntegerSchema} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("IntegerSchema should be serializable", () => {

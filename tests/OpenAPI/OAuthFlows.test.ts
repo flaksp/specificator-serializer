@@ -1,8 +1,8 @@
-import {AuthorizationCodeOAuthFlow} from "@neluzhin/specificator";
-import {ClientCredentialsOAuthFlow} from "@neluzhin/specificator";
-import {ImplicitOAuthFlow} from "@neluzhin/specificator";
-import {ResourceOwnerPasswordOAuthFlow} from "@neluzhin/specificator";
-import {OAuthFlows} from "@neluzhin/specificator";
+import {AuthorizationCodeOAuthFlow} from "@flaksp/specificator";
+import {ClientCredentialsOAuthFlow} from "@flaksp/specificator";
+import {ImplicitOAuthFlow} from "@flaksp/specificator";
+import {ResourceOwnerPasswordOAuthFlow} from "@flaksp/specificator";
+import {OAuthFlows} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("OAuthFlows should be serializable", () => {

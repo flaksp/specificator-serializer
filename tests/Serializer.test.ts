@@ -1,4 +1,4 @@
-import {RequestBody, StringSchema} from "@neluzhin/specificator";
+import {RequestBody, StringSchema} from "@flaksp/specificator";
 import {Serializer} from "../src/Serializer";
 
 test("Serializer should sort objects if sortObjectKeysAlphabetically option is true", () => {

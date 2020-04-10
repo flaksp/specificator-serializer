@@ -1,4 +1,4 @@
-import {Discriminator} from "@neluzhin/specificator";
+import {Discriminator} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Discriminator should be serializable", () => {

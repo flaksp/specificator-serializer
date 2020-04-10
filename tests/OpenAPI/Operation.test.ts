@@ -1,6 +1,6 @@
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {Operation} from "@neluzhin/specificator";
-import {Reference} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {Operation} from "@flaksp/specificator";
+import {Reference} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Operation should be serializable", () => {

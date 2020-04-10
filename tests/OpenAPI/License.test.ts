@@ -1,4 +1,4 @@
-import { License } from "@neluzhin/specificator";
+import { License } from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Licence should be serializable", () => {

@@ -1,4 +1,4 @@
-import {ImplicitOAuthFlow} from "@neluzhin/specificator";
+import {ImplicitOAuthFlow} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ImplicitOAuthFlow should be serializable", () => {

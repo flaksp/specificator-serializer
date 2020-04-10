@@ -1,4 +1,4 @@
-import {ResourceOwnerPasswordOAuthFlow} from "@neluzhin/specificator";
+import {ResourceOwnerPasswordOAuthFlow} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ResourceOwnerPasswordOAuthFlow should be serializable", () => {

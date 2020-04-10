@@ -1,4 +1,4 @@
-import {ClientCredentialsOAuthFlow} from "@neluzhin/specificator";
+import {ClientCredentialsOAuthFlow} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("ClientCredentialsOAuthFlow should be serializable", () => {

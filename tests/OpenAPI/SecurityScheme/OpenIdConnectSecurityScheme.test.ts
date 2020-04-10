@@ -1,4 +1,4 @@
-import {OpenIdConnectSecurityScheme} from "@neluzhin/specificator";
+import {OpenIdConnectSecurityScheme} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("OpenIdConnectSecurityScheme should be serializable", () => {

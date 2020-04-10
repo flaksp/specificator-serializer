@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {Tag} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {Tag} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Tag should be serializable", () => {

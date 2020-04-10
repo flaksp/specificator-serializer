@@ -1,4 +1,4 @@
-import {RequestBody} from "@neluzhin/specificator";
+import {RequestBody} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("RequestBody should be serializable", () => {

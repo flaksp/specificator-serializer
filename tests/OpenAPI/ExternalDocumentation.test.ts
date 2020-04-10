@@ -1,4 +1,4 @@
-import {ExternalDocumentation} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("ExternalDocumentation should be serializable", () => {

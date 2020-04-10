@@ -1,5 +1,5 @@
-import {ExternalDocumentation} from "@neluzhin/specificator";
-import {BooleanSchema} from "@neluzhin/specificator";
+import {ExternalDocumentation} from "@flaksp/specificator";
+import {BooleanSchema} from "@flaksp/specificator";
 import {Serializer} from "../../../src/Serializer";
 
 test("BooleanSchema should be serializable", () => {

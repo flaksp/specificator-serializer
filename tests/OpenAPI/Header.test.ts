@@ -1,5 +1,5 @@
-import {Header} from "@neluzhin/specificator";
-import {StringSchema} from "@neluzhin/specificator";
+import {Header} from "@flaksp/specificator";
+import {StringSchema} from "@flaksp/specificator";
 import {Serializer} from "../../src/Serializer";
 
 test("Header should be serializable", () => {
