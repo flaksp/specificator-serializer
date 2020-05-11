@@ -6,7 +6,7 @@
     "sideEffects": false,
     "dependencies": {},
     "devDependencies": {
-        "@hutson/npm-deploy-git-tag": "^5.0.3",
+        "@hutson/npm-deploy-git-tag": "^6.0.0",
         "@types/jest": "24.0.23",
         "coveralls": "3.1.0",
         "jest": "25.5.4",
